@@ -223,7 +223,7 @@ body > header > .logo
     margin-left: 1em;
     background-position: top center;
     background-repeat: no-repeat;
-    min-height: 800px;
+
 }
 body > header > .menu
 {
@@ -267,5 +267,6 @@ section#logo
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 800px;
 
 }
