@@ -219,9 +219,11 @@ body > header > .logo
     background-size:100% ;
     width:4em;
     height:4em;
-    margin-left: 10px;
     float:left;
     margin-left: 1em;
+    background-position: top center;
+    background-repeat: no-repeat;
+    min-height: 800px;
 }
 body > header > .menu
 {
