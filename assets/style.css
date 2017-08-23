@@ -17,15 +17,16 @@ section#logo
     min-height: 800px;
 
 }
-#schedule
+#schedule, #partners
 {
     padding: 0px;
 }
-#schedule img
+ img
 {
 
     width:100vw;
     padding: 0px;
+     margin-bottom: 1em;
 }
 .social {
     margin-top:0.70em;
