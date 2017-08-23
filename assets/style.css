@@ -1,7 +1,7 @@
 body {
     padding:0;
     margin: 0;
-    font-family: 'PT Sans Narrow',Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-family: "Myriad Pro", Myriad, 'PT Sans Narrow',Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
     color: #1b1a18;
     padding-top: 4em;
 }
@@ -16,6 +16,16 @@ section#logo
     background-repeat: no-repeat;
     min-height: 800px;
 
+}
+#schedule
+{
+    padding: 0px;
+}
+#schedule img
+{
+
+    width:100vw;
+    padding: 0px;
 }
 .social {
     margin-top:0.70em;
@@ -95,6 +105,7 @@ header
     position: relative;
     margin-bottom: 1em;
     overflow: hidden;
+    vertical-align: top;
 
 }
 /*.cards > .card > .image::after*/
@@ -299,7 +310,7 @@ body > header >.menu.links > li {
     display: none;
 }
 /* Small screens */
-@media all and (max-width: 655px)   {
+@media all and (max-width: 1024px)   {
     /*body*/
     /*{*/
         /*padding-top:0px;*/
@@ -322,10 +333,21 @@ body > header >.menu.links > li {
         padding:10px;
     }
     section#logo {
-        background-size: 100% ;
+        min-height: auto !important;
+        width:100vw;
+        height:100vw;
+        background-size: contain;
+        background-repeat:no-repeat;
+        background: url(./banner-mobile.jpg);
 
-        height: 300px !important;
-        min-height: 300px !important;
     }
 
+}
+table td{
+    vertical-align: top;
+}
+td.timespan {
+    white-space: nowrap;
+    font-weight:bold;
+    padding-right:1em;
 }
