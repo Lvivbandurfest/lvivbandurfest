@@ -107,6 +107,7 @@ header
     margin-bottom: 1em;
     overflow: hidden;
     vertical-align: top;
+    align-self: flex-start;
 
 }
 /*.cards > .card > .image::after*/
