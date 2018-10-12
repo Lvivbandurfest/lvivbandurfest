@@ -1,7 +1,7 @@
 body {
     padding:0;
     margin: 0;
-    font-family: "Myriad Pro", Myriad, 'PT Sans Narrow',Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-family:  'PT Sans Narrow',Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
     color: #1b1a18;
     padding-top: 4em;
 }
@@ -14,7 +14,7 @@ section#logo
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 800px;
+    min-height: 2000px;
 
 }
 #schedule, #partners
@@ -26,7 +26,7 @@ section#logo
 
     width:100vw;
     padding: 0px;
-     margin-bottom: 1em;
+     /*margin-bottom: 1em;*/
 }
 .social {
     margin-top:0.70em;
@@ -239,12 +239,12 @@ h1
 }
 footer
 {
-    background: #3f386d;
-    height: 4em;
+    background: #007178;
+    height: 2em;
     color:white;
     padding-right:1em;
     padding-left:1em;
-    padding-top:1em;
+    padding-top:0.4em;
 }
 footer div
 {
@@ -352,4 +352,23 @@ td.timespan {
     white-space: nowrap;
     font-weight:bold;
     padding-right:1em;
+}
+a.invite {
+    position: absolute;
+    left: 20px;
+    top: 600px;
+    height: 65px;
+    width: 600px;
+    background: rgba(251, 249, 232, 0.83);
+    /*border: #00af93 1px solid;*/
+    line-height: 65px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 34px;
+    color: #241f20;
+    transition: background ease 1s;
+    border-radius: 30px;
+}
+a.invite:hover {
+    background: #fbf9e8;
 }
