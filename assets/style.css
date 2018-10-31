@@ -353,6 +353,9 @@ td.timespan {
     font-weight:bold;
     padding-right:1em;
 }
+a.invite.master {
+    top: 676px !important;
+}
 a.invite {
     position: absolute;
     left: 20px;
