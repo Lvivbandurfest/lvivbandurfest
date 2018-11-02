@@ -17,9 +17,10 @@ section#logo
     min-height: 2000px;
 
 }
-#schedule, #partners
+#schedule, #partners,#programs
 {
     padding: 0px;
+    margin: 0px;
 }
  img
 {
