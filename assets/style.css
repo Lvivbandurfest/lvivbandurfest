@@ -14,7 +14,7 @@ section#logo
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 2000px;
+    min-height: 100vh;
 
 }
 #schedule, #partners,#programs
@@ -27,6 +27,7 @@ section#logo
 
     width:100vw;
     padding: 0px;
+
      /*margin-bottom: 1em;*/
 }
 .social {
@@ -50,10 +51,10 @@ section#logo
     data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjAuMiwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA1Ni43IDU2LjciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDU2LjcgNTYuNyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTI4LjIsMTYuN2MtNywwLTEyLjgsNS43LTEyLjgsMTIuOHM1LjcsMTIuOCwxMi44LDEyLjhTNDEsMzYuNSw0MSwyOS41UzM1LjIsMTYuNywyOC4yLDE2Ljd6IE0yOC4yLDM3LjcKCQljLTQuNSwwLTguMi0zLjctOC4yLTguMnMzLjctOC4yLDguMi04LjJzOC4yLDMuNyw4LjIsOC4yUzMyLjcsMzcuNywyOC4yLDM3Ljd6Ii8+Cgk8Y2lyY2xlIGN4PSI0MS41IiBjeT0iMTYuNCIgcj0iMi45Ii8+Cgk8cGF0aCBkPSJNNDksOC45Yy0yLjYtMi43LTYuMy00LjEtMTAuNS00LjFIMTcuOWMtOC43LDAtMTQuNSw1LjgtMTQuNSwxNC41djIwLjVjMCw0LjMsMS40LDgsNC4yLDEwLjdjMi43LDIuNiw2LjMsMy45LDEwLjQsMy45CgkJaDIwLjRjNC4zLDAsNy45LTEuNCwxMC41LTMuOWMyLjctMi42LDQuMS02LjMsNC4xLTEwLjZWMTkuM0M1MywxNS4xLDUxLjYsMTEuNSw0OSw4Ljl6IE00OC42LDM5LjljMCwzLjEtMS4xLDUuNi0yLjksNy4zCgkJcy00LjMsMi42LTcuMywyLjZIMThjLTMsMC01LjUtMC45LTcuMy0yLjZDOC45LDQ1LjQsOCw0Mi45LDgsMzkuOFYxOS4zYzAtMywwLjktNS41LDIuNy03LjNjMS43LTEuNyw0LjMtMi42LDcuMy0yLjZoMjAuNgoJCWMzLDAsNS41LDAuOSw3LjMsMi43YzEuNywxLjgsMi43LDQuMywyLjcsNy4yVjM5LjlMNDguNiwzOS45eiIvPgo8L2c+Cjwvc3ZnPgo=);
 }
 section {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 1.5em;
-    padding-bottom: 1em;
+    /*padding-left: 50px;*/
+    /*padding-right: 50px;*/
+    /*padding-top: 1.5em;*/
+    /*padding-bottom: 1em;*/
     /* border-top:#ff7477 3px solid;*/
     /*border-bottom:#91ccc3 1px solid;*/
 }
@@ -73,10 +74,10 @@ header
     -ms-flex: 0 0 24.0%;
     flex: 0 0 24.0%;
 }
-.cards.three > .card {
+.cards.two > .card {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 33.0%;
-    flex: 0 0 33.0%;
+    -ms-flex: 0 0 50.0%;
+    flex: 0 0 50.0%;
 }
 
 .cards {
@@ -93,7 +94,7 @@ header
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 100%;
+    width: 100vw;
     -ms-flex-pack: distribute;
     justify-content: space-around;
     -webkit-box-align: center;
@@ -102,13 +103,22 @@ header
     list-style-type: none;
     padding: 0px;
 }
-
+.cards > .card > a {
+    width:100%;
+    height:100%;
+    display: block;
+    background: transparent;
+}
 .cards > .card {
     position: relative;
-    margin-bottom: 1em;
+    /*margin-bottom: 1em;*/
     overflow: hidden;
     vertical-align: top;
     align-self: flex-start;
+
+
+    background-size:cover !important; ;
+    background-repeat: no-repeat !important;
 
 }
 /*.cards > .card > .image::after*/
@@ -134,28 +144,30 @@ header
 }
 .cards > .card  > .image
 {
-    background: white;
-    text-align: center;
+    /*background: white;*/
+    /*text-align: center;*/
 }
 .cards > .card  > .image > img
 {
+    opacity: 0;
     -webkit-transition: -webkit-transform 0.35s;
     transition: -webkit-transform 0.35s;
     -o-transition: transform 0.35s;
     transition: transform 0.35s;
     transition: transform 0.35s, -webkit-transform 0.35s;
+
 }
-.cards > .card.empty > .image > img{
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-}
-.cards > .card:hover > .image > img
-{
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-}
+/*.cards > .card.empty > .image > img{*/
+    /*-webkit-transform: scale(1.1);*/
+    /*-ms-transform: scale(1.1);*/
+    /*transform: scale(1.1);*/
+/*}*/
+/*.cards > .card:hover > .image > img*/
+/*{*/
+    /*-webkit-transform: scale(1.1);*/
+    /*-ms-transform: scale(1.1);*/
+    /*transform: scale(1.1);*/
+/*}*/
 
 
 .cards > .card > .title {
@@ -225,9 +237,9 @@ header
     display: block;
     width: 100%;
     height: auto;
-    border-radius: .125rem;
+    /*border-radius: .125rem;*/
     border: none;
-    padding-right: 1em;
+    /*padding-right: 1em;*/
 }
 h1
 {
@@ -313,39 +325,9 @@ body > header >.menu.links > li {
     display: none;
 }
 /* Small screens */
-@media all and (max-width: 1024px)   {
-    /*body*/
-    /*{*/
-        /*padding-top:0px;*/
-        /*margin-top:0px;*/
-    /*}*/
-    /*body > header{*/
-        /*display:none !important;*/
-    /*}*/
-    .cards.three > .card, .items >.card {
-        /* On small screens, we are no longer using row direction but column */
-        /*-webkit-box-orient: vertical !important;*/
-        /*-webkit-box-direction: normal;*/
-        /*-ms-flex-direction: column;*/
-        /*flex-direction: column;*/
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 100.0%;
-        flex: 0 0 100.0%;
-    }
-    section {
-        padding:10px;
-    }
-    section#logo {
-        min-height: auto !important;
-        width:100vw;
-        height:100vw;
-        background-size: contain;
-        background-repeat:no-repeat;
-        background: url(./banner-mobile.jpg);
+/* Small screens */
 
-    }
 
-}
 table td{
     vertical-align: top;
 }
@@ -375,4 +357,52 @@ a.invite {
 }
 a.invite:hover {
     background: #fbf9e8;
+}
+@media all and (max-width: 1024px)   {
+    /*body*/
+    /*{*/
+    /*padding-top:0px;*/
+    /*margin-top:0px;*/
+    /*}*/
+    /*body > header{*/
+    /*display:none !important;*/
+    /*}*/
+    .cards.two > .card, .items >.card {
+        /* On small screens, we are no longer using row direction but column */
+        /*-webkit-box-orient: vertical !important;*/
+        /*-webkit-box-direction: normal;*/
+        /*-ms-flex-direction: column;*/
+        /*flex-direction: column;*/
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100.0%;
+        flex: 0 0 100.0%;
+    }
+    section {
+        /*padding:10px;*/
+    }
+    section#logo {
+        min-height: 600px;
+        width:100vw;
+        height:100vw;
+
+        background-size: cover;
+        background-position:top center;
+        background-repeat:no-repeat;
+        background-image: url(./banner-mobile.jpg);
+
+    }
+    a.invite {
+
+        left: 20px  !important;
+        top: 550px  !important;
+        font-size: 18px  !important;
+
+        line-height: 45px  !important;
+        height: 45px !important;
+        width: 90vw !important;
+    }
+    a.invite.master {
+        top: 610px !important;
+    }
+
 }
